@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Javascript에서 DOM 사용</title>
+
+<script>    
+   $(document).ready(function(){
+       $('input').click(function(){
+           $.ajax({
+               type: "GET",
+               dataType: "xml",
+               url: "./ajax.xml",
+               success: function(xml){
+                   var xmlData = $(xml).find("info");
+                   var listLength = xmlData.length;
+                   if(listLength){
+                       var contentStr = "";
+                       $(xmlData).each(function(){
+                           contenStr +="[기호" + $(this).find("no").text() +"]"
+                           + $(this).find("name").text() + "후보("
+                           + $(this).find("job").text() + ")</br>";                      
+                         });
+                         $("#after").append(contentStr);
+                   }
+               }
+           })
+       })
+   })
+</script>
+</head>
+<body>
+<div>DOM 테스트</div>
+<div>
+    <!-- <input type="button" value="XML DOM" onclick="domTest()"> -->
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,336 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	 
+	  <link rel="stylesheet" href="style.css">
+	  <?xml version="1.0" encoding="UTF-8"?>
+	 <?xml-stylesheet type="text-xsl" varsion="2.0" href="ajax.xml"?>
+
+
+	
+    <script>
+
+
+        $(document).ready(function(){
+			$('.slider').bxSlider({
+				auto: true,
+				 speed: 500, 
+				 pause: 4000, 
+				 mode:'fade', 
+				 autoControls: true, 
+				 pager:true
+			});
+			
+		})
+
+    </script>
+
+</head>
+<html>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="a">
+			<h1>car information</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<div class="slider">
+					<img src="img/12.jpg" height="700" width="300"/>
+					<img src="img/22.jpg" height="700" width="300">
+					<img src="img/20.jpg" height="700" width="300">
+					<img src="img/img.jpg" height="700" width="300">
+					<img src="img/23.jpg" height="700" width="300">
+					<img src="img/32.jpg" height="700" width="300">
+					<img src="img/34.jpg" height="700" width="300">
+				  </div>
+			
+			<ul data-role="listview" data-inset="true">
+				<h1>CAR</h1>
+				<li><a href="#intro"><img src="img/po.png"style="max-width:80px;max-height:80;">회사소개</a></li>
+				<h1>스포츠카</h1>
+				<li><a href="#model"><img src="img/37.jpg"style="max-width:80px;max-height:80;">박스터(기본모델)</a></li>
+				<li><a href="#model_1"><img src="img/37.jpg"style="max-width:80px;max-height:80;">박스터(GTS모델)</a></li>
+				<li><a href="#model_2"><img src="img/51.jpg"style="max-width:80px;max-height:80;">911</a></li>          
+			</ul>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>company</h4>
+						<ul>
+							<li><a href="https://www.google.co.kr/maps/search/%ED%8F%AC%EB%A5%B4%EC%89%90+%EC%84%9C%EB%B9%84%EC%8A%A4/@36.5270841,127.9326586,8z?hl=ko">our services</a></li>
+							<li><a href="#wizard3-1">engine sound</a></li>
+							<li><a href="#gallery">PHOTOS</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>get help</h4>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#ajax.xml">sales rate(판매량)</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="https://m.facebook.com/porsche.sscl/"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/PorscheGB"><i class="fab fa-twitter"></i></a>
+							<a href="https://www.instagram.com/porsche.autostadt/"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.porsche.com/korea/ko/"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://www.youtube.com/user/Porsche"><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	   </footer>
+
+</div>
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+			<h1>회사소개</h1>
+		</div>
+		<div data-role="content1">
+				<div  style="text-align:center">
+					<a href="https://www.porsche.com/korea/ko/"><img src="img/po.png" alt=""></a>
+					<h5>위 이미지를 클릭하면 공식 사이트로 이동합니다</h5>
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>브랜드역사</h3>
+					<p>
+						정식 명칭 : Dr. Ing. h.c. F. Porsche AG<br>
+						한국어 명칭 : 포르쉐주식회사<br>
+						설립일 : 1931년<br>
+						설립자 : 페르디난트 포르셰<br>
+						소재지 : 독일 국기 독일 바덴뷔르템베르크 주 슈투트가르트<br>
+						핵심인물 : 볼프강 포르셰 (회장), 올리버 블루메 (CEO)<br>
+						업종 : 자동차 제조업<br>
+						모기업 : 폭스바겐 그룹<br>
+						매출 : 258억 유로(2018년)<br>
+						당기순이익 : 43억 유로(2018년)<br>
+					</p>
+					<p>포르쉐(독일어: Porsche AG 포르셰 악티엔게젤샤프트[*])는 독일의 슈퍼카 전문 제조 기업이다. 포르쉐 자동차 제조사인 포르쉐 AG(Dr. Ing. h.c. F. Porsche AG)와 폭스바겐 AG가 대주주이다. 독일 바덴뷔르템베르크주 슈투트가르트에 본사가 있다. 포르쉐의 대표모델은 포르쉐 911이다. 1931년 오스트리아-헝가리 제국의 기술자였던 공학박사 페르디난트 포르셰에 의해 설립되었다.
+
+                        주로 고성능 슈퍼카을 만들며 시장에도 진출했다. 페르디난트 포르셰 박사가 폭스바겐 비틀을 설계했고, 포르셰 박사의 외손자이자 페르디난트의 딸 루이제 포르셰의 아들인 페르디난트 피에히는 폭스바겐 그룹의 감독 이사회 의장을 맡고 있어서 시작부터 폭스바겐과 연관이 있는 회사이다. 매출 증진을 바탕으로 2008년에 폭스바겐을 자회사로 인수하려고 했으나, 그 해 미국에서 불어닥친 금융 경색에 따른 자금 압박과 은행 대출 이자를 감당하지 못하고 오히려 폭스바겐의 한 계열사로 편입되었다. 2012년 7월 5일에 폭스바겐이 포르쉐를 완전히 인수했다.[2] 2008년에 폭스바겐을 인수하려고 했던 벤델린 비데킹 회장은 이에 따른 책임으로 회장직에서 물러났고, 창업자 페르디난트의 손자인 볼프강 포르셰가 회장직에 올랐다. 대한민국에서는 스투트가르트 스포츠카에서 공식 수입하여 판매했으나, 2014년 1월 1일 대한민국 현지법인 포르쉐코리아가 세워졌고 스투트가르트 스포츠카는 딜러 업체가 되었다.
+                        
+                        2020년 현재 생산 및 시판중인 모델로 쿠페는 911, 718 박스터, 718 카이맨이 있고 SUV는 카이엔과 마칸이 있으며, 세단 파나메라, 그리고 전기차 타이칸이 있다. 911은 수평대향식 6기통 엔진을 차량 뒤편/미드십에 장착한다. 카이엔과 파나메라에 장착되는 커먼레일 디젤 엔진, 가솔린 하이브리드용 슈퍼차저 엔진, V6 가솔린 엔진은 폭스바겐 및 아우디와 엔진을 공용하고 포르쉐의 입맛에 맞게 세팅한다. 카이엔의 차체는 폭스바겐의 슬로바키아 현지 공장에서 투아렉, Q7과 함께 제작되어 라이프치히 공장에서 조립을 끝낸다. 카이엔과 파나메라에 달리는 V8 가솔린 엔진은 포르쉐 자체에서 만든다.
+                        
+                        폭스바겐 비틀을 베이스로 만든 스포츠카인 356에 붙은 별명인 "점프하는 개구리"를 시작으로, 역사가 오래 된 모델인 911에 달린 후드에 튀어나온 둥근 라이트 때문에 포르쉐에서 나오는 차량들은 "개구리"라는 별칭이 있다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>회사평가</h3>
+					<p>스포츠카의 대명사 같은 브랜드이며, "일반적인 차들은 시간이 흐르면 폐차장으로 가지만 포르쉐는 박물관으로 간다"라는 말이 있을 정도로 기계적 완성도가 뛰어나다는 평가를 받고있다. 또한 "데일리 카처럼 탈 수 있다"는 장점이 있다. 최근엔 폭스바겐 아우디와의 기술 협업도 많이 하기 때문에 디젤 엔진이라든지[4] 카이엔이나 파나메라 같은 새로운 모델 개발도 가능할 수 있었다.
+
+						세계에서 유일하게 슈퍼카를 기계생산으로 양산하는 업체이며, 또한 순수익을 따졌을 때 세계에서 가장 높은 수익률을 자랑하는 자동차 회사이기도 하다. 덕분에 그 재력을 바탕으로 페라리나 람보르기니가 다른 양산차 업체에 먹혀 빌빌거릴 때 다른 양산차 업체를 잡아먹을 생각을 하고 있었고, 결국에는 그렇게 되었다.[8] 고정밀 기계 생산으로 인한 고품질 달성과 JIT 시스템 도입을 통한 생산 단가 감소[9]로 슈퍼카를 상대적으로 저렴한 가격에 생산 및 판매할 수 있게 된 것인데 이를테면 911 터보 S와 GT2 RS, GT3 RS같은 라인업들은 성능면에서는 당연히 슈퍼카의 범주에 들어가야 하지만, 다른 브랜드의 슈퍼카 오너들이 포르쉐을 슈퍼카로 인정하지 않는 경향도 있다. 이들의 주장은 성능도 성능이지만 감성적인 부분을 포르쉐가 채워주지 못하며 특히 희소성이 너무 부족하다는 것이다. 포르쉐는 카이맨, 파나메라 심지어 마칸의 등장으로 길거리에서 자동차 매니아가 아닌 대중들에게 포르쉐 마크 혹은 개구리 디자인이 너무 자주 노출되어 슈퍼카 브랜드 같지 않고 슈퍼카를 구매함으로써 모두의 동경이 될 수 있다는 감성을 채워주지 못한다는 것이다. 그러니 특히나 과시성이 강한 소비재인 람보르기니나 페라리와 같은 고가의 차량을 소유한 오너들에게 포르쉐가 평가절하 되는 것이 어쩌면 당연한 일일지도 모른다. 하지만 모터스포츠를 즐기는 자동차 매니아들 사이에서 포르쉐를 평가절하하기는 힘들다. 물론 레이서들의 레이싱카라는 평을 듣는 페라리나[11] 슈퍼카 브랜드의 대명사인 람보르기니도 있지만 정작 뉘르부르크링기록은 포르쉐가 계속 경신하고 있는것 처럼 모든 포르쉐 차량이 그러한 것은 아니지만 포르쉐의 911 터보 S, GT3, GT3 RS, GT2 RS는 경쟁차종들에 뒤쳐지지 않는, 오히려 성능면에서 슈퍼카와 맞먹는 차량이다. 더불어 모터스포츠에서 최고의 성능을 보여주기 때문에 그 가치가 과시 보다는 모터스포츠 매니아들 사이에서 더 높다고 할 수 있고, 성능 면에서는 충분히 최고의 브랜드이며, 포르쉐의 진정한 가치는 슈퍼카의 양산 능력이 아니라 포르쉐가 자랑하는 극한의 코너링 성능인 만큼 서킷에서 더욱 빛이 난다.
+						
+						디자인에 있어서는 디자인 컨셉을 911을 기본 베이스로 하며, "911 디자이너들은 죄다 똑같이 개구리같은 스포츠카만 하루 종일 그리다가 퇴근한다"라는 우스갯소리가 있을 정도로 전통을 고수한다.
+                     </p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>기술력</h3>
+					<p>포르쉐의 기술력은 외계인을 고문해 개발했다고 할정도로 뛰어난 기술력을 지니고 있다.
+
+						스포츠카 범주안에서 유일하게 RR구동을 고집해서 쓰는 브랜드이다. 대표 모델이 911 전 모델이 엔진이 차축의 뒷쪽에 위치하며, 카레라 4, 4S등을 제외 한 모든 카레라 시리즈, 그리고 서킷주행 능력이 극대화된 GT3, GT3 RS, 그리고 GT2 RS 가 RR 타입을 쓴다. 터보 모델을 제외한 다른 911모델들은 숫자 4가 모델 이름에 들어가지않으면 후륜구동이다. 엔진이 차 뒤에 있어서 무게 중심이 뒤쪽에 있다보니 가속력과 제동이 매우 뛰어난 편. 하지만 오버스티어 현상이 강해서 993 이전 공랭식 모델의 경우 숙련된 운전자가 아니면 운전하기 어려운 차라는 인식이 매우 강했으나, 993부터는 리어 서스펜션의 대폭적인 구조변경으로 데뷔 당시 각종 매체 평가에서 후륜구동인 카레라 S 조차도 마치 964 시절의 4륜구동 모델과도 같은 주행안정성을 갖추어 냈다는 평을 듣기 시작했다. 때문에 지금 출시되는 911 카레라들은 이런 인식이 많이 없어졌다.[17]
+						
+						전체 문단을 읽어보면 알겠지만 포르쉐는 슈퍼카를 만들 기술력이 없어서 못 만드는게 아니다. 포르쉐 만의 독특한 아이덴티티와 개성을 지키기 위해서 만들지 않을뿐이지, 이는 918 스파이더나, 991.2 GT2 RS와, 현행 992 터보 시리즈들의 서킷 랩보드 타임만 봐도 알 수 있는 부분이다. 그런가하면 정비성, 차량 유지 부분에 있어서는 어느 여타 슈퍼카 브랜드들과 비교할수 없을 정도로 뛰어나고[18] 내구성도 독삼사급으로 뛰어나다. 정말 실용주의의 끝판왕 스럽다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>패키징 설계능력</h3>
+					<p>위의 균형설계도 특징이지만 포르쉐의 가장 큰 특징이라 하면 단연 엄청난 패키징 설계 능력이다. 포르쉐의 치밀하고 계획적인 패키징 설계는 차량의 출력이 엄청나게 높은 편이 아닌데도 불구하고 대단한 성능이 발휘될 수 있게 해준다.
+
+						포르쉐 중에서도 가장 치밀하고 계획적인 설계가 이루어지는 911을 예로 들면, 출력은 모델별로 다르지만 보통 카레라가 300~400마력대로 아주 높은 편은 아니며, 고성능 라인업인 터보도 500~600마력대에 머무른다. 하지만 911은 이런 비교적 낮은 출력에도 불구하고[21] 상당한 성능을 보여주며 특히나 편의를 양보해서라도 포텐셜을 극한까지 끌어올린 퓨어 스포츠카를 표방하는 GT2 및 GT3 계열은 자연흡기/과급기 모델 할것 없이 해당 차량보다 상급의 모델들 혹은 스펙이 더 앞서나가있는 웬만한 경쟁차들 보다도 빠른 랩타입을 뽑아내[22] 몸소 증명하며 실 성능의 탁월함을 유감없이 보여주고 있다.
+						
+						4륜구동 기술도 굉장한 수준이었다. 포르쉐의 기술들을 가만히 살펴보면, 종래에 있던 재래기술을 신들린 최적화로 최고의 완성도로 내놓는것이 특징이지, 의외로 "세계 최초로 어떤 기술을 적용했다"는 부분을 다소 찾기가 어려운데, 이 4륜구동 시스템 만큼은 세계 최초는 물론이고 시대를 아주 많이 앞서있던 기술력으로 아주 특별하다고 할 수 있었다. 그야말로 포르쉐만의 완전 오리지널.
+						
+						바로 포르쉐 959에 적용된 PKD (Porsche-Steuer Kupplung) 4륜구동 시스템인데, 이것은 911의 RR 레이아웃을 기반으로 만든 것이었다. 이 시스템은 전자제어 4륜구동 시스템에서 진일보한 평가를 받았는데, GT-R이 부활한 1989년 당시의 닛산 스카이라인 GT-R (BNR32)의 4륜구동 시스템 '아테사 ET-S 시스템'은 조금 심하게 말해서 포르쉐 959의 시스템을 그냥 가져다 복붙한 수준이라 평가받았을 정도로 매우 앞서간 시스템이었다.[23] 그러나 안타깝게도 PKD는 오직 959에만 적용되었고, 911의 4륜구동 시스템은 보그워너제 ITM 시스템을 사다가 장착한 정도고, 카이엔같은 차량들 역시도 별반 다를 바 없는 수준이라[24] 아쉬움을 토로하는 목소리가 들리기도 한다.
+						
+						물론 959같은 업계 유일의 최첨단 기술이 아니다 뿐이지 이와 별개로 서스펜션 매니지먼트 시스템 (PASM) 등을 적용하여 주행시 매우 높은 안정감을 주도록 하는 기술들이 많다. 문서 앞부분에서 서술했듯이 어차피 요즘은 차량 제조사들이 자신에게 없는 기술들을 서로 사간지 오래이기도 하다. 오히려 현재는 각종 서스펜션 제어 시스템과 함께 전륜뿐 아니라 후륜까지 조향을 하는 리어 액슬 스티어링 등 여러 기술을 추가하는 모습을 보이고 있다.
+						
+						일찍이 터보 초창기 시절부터 자사 최고성능의 양산모델에 터보엔진을 장착했으면서도, 중간에 자연흡기 엔진으로 선회하는 일이 없이, 반세기동안 꾸준하게 플래그십 터보엔진 양산차를 오랜기간 개발/생산했기 때문에 관련 기술력과 노하우도 상당 수준을 가지고 있다. 실상 현대적인 엔진 다운사이징의 기초 개념을 제시하며 그 길을 닦아온 회사는 다름 아닌 포르쉐라 해도 과언이 아닌데, 터보엔진을 가지고 스포츠카에 있어서 가장 중요한 엔진 반응을 자연흡기 엔진과 동등한 수준으로 끌어내기 위해서 기술을 개발하다보니 여기까지 오게 된 것이다.
+						
+						996 시절까지는 배기량과 출력에 비해 다소 작은 터빈으로 엔진 리스폰스를 살리면서도, 터보 내구성에 있어서는 본좌급의 취급을 받는 KKK 사의 우수한 내구성을 바탕으로 양산차치고는 상당한 수준의 과급압력[25]을 적용하고 여기서 얻어지는 높은 토크를 활용해 고출력을 만들어 내는 방식을 애용했다가, 997부터는 아예 디젤엔진에서만 사용되던 VGT 시스템을 적용시켜 넉넉한 터빈 사이즈로 고회전에서의 터빈서징 문제까지도 해결시켜 단숨에 경쟁사의 플래그십 V12 자연흡기 엔진에 버금갈 정도의 성능을 뽑아내놓기에 이른다.
+						
+						아예 그동안 디젤 차량 중 트럭같이 토크가 중요한 차량에나 부분적으로 적용되었던 VGT (Variable Geometry Turbocharger, 가변 지오메트리 터보차저)를 가솔린 차량에 적용하는 위엄을 보여줬다. 이 기술은 실제로 터보랙을 효과적으로 줄여주면서 최고 출력의 RPM 범위를 넓혀주는 등 장점이 많지만 터빈 안에 움직이는 부품이 있는 만큼 내구성 문제 때문에 상대적으로 저속에서 작동하는 디젤 엔진에서나 볼 수 있었다. VGT 터보의 가격을 떠나서 보통 가솔린 차량엔 넣고 싶어도 고회전 위주인 가솔린 엔진 특성상 제작도 몹시 까다로워지고, 일단 내구성 때문에 함부로 넣을 수도 없다는 것. 설령 넣는다 한들 다른 차도 아니고 매번 극한의 상황에 마주하게 되는 스포츠카에 넣는 건 상상도 하기 힘든 일이다. 그런데 포르쉐는 이걸 자사의 슈퍼카에 집어넣음으로써 터보랙을 매우 효과적으로 줄여서 거의 없는 수준으로 만들고 넓은 최고출력 영역대까지 확보하면서도 내구성은 여전히 강력한 엔진을 만들어냈다.
+						
+						정지 상태에서 급가속할 때도 성능을 여지없이 발휘한다. 역시 터보랙같은건 없으며, 제로백 자체도 엄청나게 빠른 편인데 이걸 무려 50번 연속으로 해도 아무런 성능 저하가 없다. 당연히 차량도 손상 없이 무사하다.
+						
+						전용 브레이크인 PCCB (Porsche Ceramic Composite Brake)는 그야말로 바닥에 꽂힌다는 기분으로 차를 정지시킨다. 그럼에도 운전자 입장에서 매우 다루기 쉽다고 한다. 이 PCCB의 경우 부품값만 국산 소형차 한대값이다.[26][27]이 외에도 PASM (Porsche Active Suspension Managemant)[28], PDLS (Porsche Dynamic Light System)[29] 등등 옵션으로 들어가는 장비마다 기본 접두어 수준으로 포르쉐를 붙여 가며 자사의 네임밸류를 적극 활용한다.
+						
+						일반적으로 스포츠카는 목표 성능 때문에 경량화 내지는 마찰저감 등을 이유로 내구성이 다소 희생되는 듯한 인상인데, 실제로도 일반적인 스포츠카의 소모품 교체주기는 일반 승용차에 비해서는 대단히 짧다. 그럼에도 포르쉐는 스포츠카 시장에서는 독보적일 정도의 내구성을 보이며, 일반적인 스포츠카와의 비교는 커녕 웬만한 평범한 일반 승용차에 필적하는, 또는 그 이상의 내구성을 보이는데, 수십년이 넘는 세월동안 여태까지 포르쉐가 만든 모든 자동차들의 2/3 이상이 현역으로 각 나라의 도로를 누비고 있다는 점은 포르쉐의 우수한 내구성과 품질을 증명한다.[30] 1940년대 후반~1960년대 중반까지 76 000 대 가량 생산된 356 시리즈가 2013년 현재에도 절반 정도 살아남아서 굴러 다닌다고도 하고,[31][32] 포르쉐 설명서에는 "이제까지 생산된 모든 포르쉐 차량 중 2/3 이상은 아직도 도로를 달리고 있습니다. 제품을 재활용하기 위한 최적의 방법은 결코 재활용할 필요가 없도록 하는 것입니다."란 문구가 적혀있을 정도다. 또한 포르쉐 내부에도 중고차 관리 부서가 따로 있어서, 믿을 만한 포르쉐 본사 공인 중고차를 구할 수도 있다. 이는 포르쉐 차량의 잔존가치를 유지하기 위한 본사의 조치로 이루어진 일이다.
+						
+						하지만 2015년을 강타한 폭스바겐의 배출가스 조작 사건에 포르쉐도 걸려들었다. 폭스바겐의 V6 3 리터 커먼레일 디젤 엔진을 카이엔과 파나메라에서 이용 중이기 때문.[33] 이후 포르쉐에서도 모든 디젤 차량이 단종되었다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" id="model" data-theme="b">
+			<div data-role="content" data-theme="a">
+				<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+				<h1>박스터</h1>
+			</div>
+			</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Untitled. All rights reserved Design by 2021</h1>
+		</div>		
+	</div>
+	<div data-role="page" id="model" data-theme="b">
+		<div data-role="header" data-theme="a">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+			<h1>차량소개</h1>
+		</div>
+		<h1>Porsche 718 Boxster(기본모델)</h1>
+		<div class="slider">
+			<img src="img/45.jpg" height="700" width="300"/>
+			<img src="img/46.jpg" height="700" width="300">
+
+			
+			</div>
+			<p id="text_1">
+				2016년에 나온 981의 새로운 버전. 모델 이름에 718이 추가되어 공식 모델 이름은 718 박스터가 되었다.
+
+기본적인 차대가 크게 바뀌지 않았기 때문에 페이스리프트라 불러야 하지만, 일단 포르쉐 측에서는 공식적으로 모델 체인지라 주장하고 있다. <br>
+확실히 코드네임이 바뀔 정도로 차대를 빼고는 큰 변화가 있었다. 가장 큰 변화는 다운사이징 터보 엔진. 이전까지는 수평대향 6기통 엔진이 쓰였지만, 982에서는 엔진이 다운사이징되어 수평대향 4기통 트윈터보 구성을 쓴다. 기본형 718 박스터에는 빈약한 4기통 2,000cc[4] 최고출력은 300마력 정도이며, 상위 버전인 718 박스터 S에는 2 500 cc 엔진이 올라가며 최고출력은 350마력이다. 718 박스터 S에는 911에 이어 가솔린 엔진에 가변 지오메트리 터보차저 (VGT)가 쓰인다. 다운사이징되었지만 출력은 오히려 상승했다. 박스터 S의 경우 제로백도 4.4초의 성능 향상을 이루었다.
+
+이때부터는 기존과 달리 박스터가 카이맨보다 높은 서열의 모델로 분류된다고 확정되어, 기존 카이맨 오너들의 실망을 불러일으키고 있다고 한다. 카이맨과 박스터의 바디가 통합된 이유이기도 하다. 하지만 정작 카이맨에서 박스터보다 성능이 더 좋은 라인업들[5]이 여럿 나와서, 2020년 현재까지도 아래 서열로 분류된 카이맨의 아성을 뛰어넘지 못해서 카이맨에게 계속 하극상을 당하고 있다.[6] 카이맨은 2021년에 아예 최상급 트림인 GT4 RS가 나오기로 예정되며 격차는 더욱 벌어질 전망이다
+			</p>
+	
+
+			</div>
+			
+			<div data-role="page" id="model_1" data-theme="b">
+				<div data-role="header" data-theme="a">
+					<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+					<h1>차량소개</h1>
+				</div>
+				<h1>Porsche 718 Boxster(GTS모델)</h1>
+				<div class="slider">
+					<img src="img/47.jpg" height="700" width="300"/>
+					<img src="img/48.jpg" height="700" width="300">
+		
+					
+					</div>
+					<p id="text_1">
+						2018년식 718 박스터 GTS도 출시되었는데 기존 박스터 S의 350마력에서 15마력 상승한 365마력이며 제로백은 4.1초이다. 가격은 1억 1290만원이다. 기본형 박스터나 박스터 S의 경우 기본 가격으로 주문하면 바닥매트도 없는 문자 그대로 '깡통'이 오지만 GTS의 경우 기본 가격에도 상당히 많은 옵션을 탑재하고 있다.
+
+특이하게도 GTS와 일반 모델 간의 차별점이 확실하게 보이는 이전들과 달리 이번 세대의 GTS는 일반사양에서 프론트 하부를 걷어내는 구조를 갖고 있다. 일반사양 프론트 하부가 뭔가 덮힌 듯한 모양새인 건 방열부를 보호하기 위해서이다. 범퍼와 그릴을 걷어내고 방열부와 일체화된 듯한 별도의 검은색 프레임을 부착하면 봉인해제 흡사 페라리 488 GTB처럼 더욱 날렵한 인상의 GTS로 변모한다. 보통 해당 세대의 디자인적 측면에서 박스터와 카이맨 모두 GTS를 더 선호하기도 하며, 일반 사양의 준수한 성능을 알면서도 디자인 때문에 GTS로 구입하는 사람도 있을 정도다. 기본형 모델에도 이러한 멋들어진 GTS룩 범퍼를 옵션으로 넣을 수 있지만 옵션가격이 매우 비싸다.
+
+GTS 프레임은 무광과 유광 두 종류가 있고, 과격한 운전을 상정하여 프레임의 중앙에 혓바닥 견인기구 접속부를 달 수도 있다. 일반 사양의 방열부에 GTS 프레임을 시공하는 비용은 국내가로 약 800만원 상당이다.
+
+오너이건, 포르쉐 빠이건 까이건 상관없이 입을 모아 까는 점은 4기통 엔진인 MA2.20 / MA2.25 엔진 특유의 빈약한 배기음과 가짜 배기음이 있다. 이는 같은 엔진을 쓰는 기본형 카이맨과 카이맨 S, T, GTS도 마찬가지. V8 엔진을 차용하고 있는 카마로와 머스탱, 그리고 챌린저에게 배기음으로 꿇리는 광경을 보고있노라면 이것이 정녕 비싼 차가 맞나 싶은 생각이 든다고도 한다. GTS도 상황은 크게 다르지 않아서 머슬카들의 굉음에 GTS도 GTS 따위가 되버리는 경우가 많다. 때문에 718 박스터는 대부분 배기음 튜닝을 거쳐간다.[7]
+
+6기통 자연흡기 엔진을 장착한 GTS 4.0 모델이 나왔다. 카이맨 GTS 4.0과 동일하게 407마력으로 디튠된 포르쉐 MDG 엔진[8]이 들어간다
+					</p>
+			
+		
+					</div>
+				
+					<div data-role="page" id="model_2" data-theme="b">
+						<div data-role="header" data-theme="a">
+							<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+							<h1>차량소개</h1>
+						</div>
+						<h1>Porsche 911</h1>
+						<div class="slider">
+							<img src="img/47.jpg" height="700" width="300"/>
+							<img src="img/48.jpg" height="700" width="300">
+				
+							
+							</div>
+							<p id="text_1">
+								2018년식 718 박스터 GTS도 출시되었는데 기존 박스터 S의 350마력에서 15마력 상승한 365마력이며 제로백은 4.1초이다. 가격은 1억 1290만원이다. 기본형 박스터나 박스터 S의 경우 기본 가격으로 주문하면 바닥매트도 없는 문자 그대로 '깡통'이 오지만 GTS의 경우 기본 가격에도 상당히 많은 옵션을 탑재하고 있다.
+		
+		특이하게도 GTS와 일반 모델 간의 차별점이 확실하게 보이는 이전들과 달리 이번 세대의 GTS는 일반사양에서 프론트 하부를 걷어내는 구조를 갖고 있다. 일반사양 프론트 하부가 뭔가 덮힌 듯한 모양새인 건 방열부를 보호하기 위해서이다. 범퍼와 그릴을 걷어내고 방열부와 일체화된 듯한 별도의 검은색 프레임을 부착하면 봉인해제 흡사 페라리 488 GTB처럼 더욱 날렵한 인상의 GTS로 변모한다. 보통 해당 세대의 디자인적 측면에서 박스터와 카이맨 모두 GTS를 더 선호하기도 하며, 일반 사양의 준수한 성능을 알면서도 디자인 때문에 GTS로 구입하는 사람도 있을 정도다. 기본형 모델에도 이러한 멋들어진 GTS룩 범퍼를 옵션으로 넣을 수 있지만 옵션가격이 매우 비싸다.
+		
+		GTS 프레임은 무광과 유광 두 종류가 있고, 과격한 운전을 상정하여 프레임의 중앙에 혓바닥 견인기구 접속부를 달 수도 있다. 일반 사양의 방열부에 GTS 프레임을 시공하는 비용은 국내가로 약 800만원 상당이다.
+		
+		오너이건, 포르쉐 빠이건 까이건 상관없이 입을 모아 까는 점은 4기통 엔진인 MA2.20 / MA2.25 엔진 특유의 빈약한 배기음과 가짜 배기음이 있다. 이는 같은 엔진을 쓰는 기본형 카이맨과 카이맨 S, T, GTS도 마찬가지. V8 엔진을 차용하고 있는 카마로와 머스탱, 그리고 챌린저에게 배기음으로 꿇리는 광경을 보고있노라면 이것이 정녕 비싼 차가 맞나 싶은 생각이 든다고도 한다. GTS도 상황은 크게 다르지 않아서 머슬카들의 굉음에 GTS도 GTS 따위가 되버리는 경우가 많다. 때문에 718 박스터는 대부분 배기음 튜닝을 거쳐간다.[7]
+		
+		6기통 자연흡기 엔진을 장착한 GTS 4.0 모델이 나왔다. 카이맨 GTS 4.0과 동일하게 407마력으로 디튠된 포르쉐 MDG 엔진[8]이 들어간다
+							</p>
+					
+				
+							</div>
+					
+					
+				
+			
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>차량 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">718 동영상</div><br/>
+			<li><iframe width="100%" height="315" src="https://www.youtube.com/embed/Ku49WlymBVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br/>
+			<div class="ui-bar ui-bar-e"></div><br/>
+			<div class="ui-bar ui-bar-e">타이칸 동영상</div><br/>
+			<li><iframe width="100%" height="315" src="https://www.youtube.com/embed/CLqs7kX7oNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">영상</div><br/>
+			<li><video controls width="100%" preload="metadata">
+				<source src="mop.mp4" type="video/mp4">
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content">
+			<div class="#">배기음</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="gts4.0.mp3" type="audio/mp3">
+			</audio>	
+			<img src="3-1.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>2</h1>
+		</div>
+		<div data-role="content">
+			<div class="#">배기음2</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="start2.mp3" type="audio/mp3">
+			</audio>			
+			<img src="3-2.jpg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+    <div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>차량 갤러리</h1>
+		</div>
+		<div data-role="content">
+			<div class="slider">
+				<img src="img/9.png" alt="">
+				<img src="img/3.jpg" alt="">
+				<img src="img/4.jpg" alt="">
+
+			  </div>
+		</div>
+</div>
+
+</div>
+</body>
+</html>
